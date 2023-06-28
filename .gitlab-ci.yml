@@ -1,0 +1,8 @@
+stages:
+  - deploy
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "${DOCKER_TAG}"
+    - echo "Application successfully deployed."
